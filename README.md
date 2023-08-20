@@ -18,7 +18,7 @@ modules required:
 3. tkinter
    	```bash
     	pip3 install tk
-    ```
+    	```
 4. PIL (pillow)
 	```bash
  	pip3 install pillow
@@ -33,20 +33,18 @@ In all python files:
 mycon = sqltor.connect(...)
 give your hostname, username, password and database name as values for the parameters
 
--> To start the application: run Main-Interface.py
+# To start the application: run Main-Interface.py
    User interface proided by Main-Interface.py
 
 # For records to be maintained consistent (interest calculation purposes):
    run:
-	-> fd-daily-run.py
-	-> sb-daily-run.py
-	-> studloan-daily-run.py 
+	-> fd-daily-run.py, sb-daily-run.py, studloan-daily-run.py 
    files once every day 
 
    and
-	-> fd-quarterly-run.py
- 	-> sb-quarterly run.py 
+   
+	-> fd-quarterly-run.py, sb-quarterly run.py 
    files every 3 months from the first day of running the main program.
 
 
-For detailed walkthrough and other implementation details- Check out the project report
+For a detailed walkthrough of the application and other implementation details- please check out the project report
