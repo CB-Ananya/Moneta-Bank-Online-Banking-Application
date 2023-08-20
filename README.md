@@ -29,17 +29,19 @@ To run the application: modules required:
 
 
 
-Firstly, create the mysql tables in MySQL Command Line Client using the commands in CreateTables.txt
-
+Firstly, create the mysql tables in MySQL Command Line Client using the commands in 
+```
+CreateTables.txt
+```
 In all python files:
-
-mycon = sqltor.connect(...)
-
+```
+mycon = sqltor.connect(host='hostname', user='username', password='passwd', database='dbname')
+```
 give your hostname, username, password and database name as values for the parameters
 
 ### To start the application: run Main-Interface.py
 
-   User interface proided by Main-Interface.py
+   	User interface proided by Main-Interface.py
 
 ### For records to be maintained consistent (interest calculation purposes):
 
@@ -59,4 +61,4 @@ give your hostname, username, password and database name as values for the param
 
 
 
-For detailed walkthrough and other implementation details- Check out the project report
+For a detailed walkthrough of the application and other implementation details- Check out the project report
