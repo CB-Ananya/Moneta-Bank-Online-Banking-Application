@@ -1,6 +1,6 @@
 ## Moneta-Bank-Online-Banking-Application
 
-#Synopsis
+# Synopsis
 Scope of Moneta Bank project
 The project aims to develop an online banking platform where following banking functions can be serviced through this computer application in Python and MySQL:
 1.	Savings Bank Account (Deposits)
@@ -9,7 +9,7 @@ The project aims to develop an online banking platform where following banking f
 
 
 
-#To run the application: 
+# To run the application: 
 modules required:
 1. mysql.connector 
 	- pip3 install mysql.connector
@@ -30,7 +30,7 @@ give your hostname, username, password and database name as values for the param
 -> To start the application: run Main-Interface.py
    User interface proided by Main-Interface.py
 
-#For records to be maintained consistent (interest calculation purposes):
+# For records to be maintained consistent (interest calculation purposes):
    run:
 	-> fd-daily-run.py
 	-> sb-daily-run.py
