@@ -1,0 +1,68 @@
+CREATE TABLE login (
+    CustID bigint(12) NOT NULL,
+    Name varchar(25) NOT NULL,
+    Gender char(1) DEFAULT NULL,
+    dob date DEFAULT NULL,
+    password varchar(50) DEFAULT NULL,
+    RandomNumber int(3) DEFAULT NULL,
+    PRIMARY KEY (CustID)
+);
+
+CREATE TABLE type_acc (
+    CustID bigint(12) NOT NULL,
+    Name varchar(25) DEFAULT NULL,
+    FD char(1) DEFAULT 'N',
+    SB char(1) DEFAULT 'N',
+    StudLoan char(1) DEFAULT 'N',
+    PRIMARY KEY (CustID)
+);
+
+CREATE TABLE sb (
+    CustID bigint(12),
+    Name varchar(25),
+    dob date,
+    DateOfOpening date,
+    Principal bigint(25),
+    Acc_No bigint(12) NOT NULL,
+    Interest bigint(15) DEFAULT 0,
+    DateOfLatestQR date,
+    PRIMARY KEY (Acc_No)
+);
+
+CREATE TABLE fd (
+    CustID bigint(12),
+    Name varchar(25),
+    dob date,
+    DateOfOpening date,
+    Principal_at_open float,
+    Principal decimal(12,2),
+    FDAcc_No bigint(12) NOT NULL,
+    Tenure int(3),
+    RoI float,
+    FDInterest decimal(12,2),
+    MaturityValue decimal(12,2),
+    MaturityDate date,
+    DateOfLatestQR date,
+    FD_Status varchar(40),
+    If_broken_amount decimal(12,2),
+    PRIMARY KEY (FDAcc_No)
+);
+
+CREATE TABLE studloan (
+    CustID bigint(12),
+    Name varchar(25),
+    Loan_Acc_No bigint(16) NOT NULL,
+    DateOfSanction date,
+    Loan_Principal float,
+    Loan_Tenure int(2),
+    Loan_RoI float,
+    Loan_EMI int(9),
+    Loan_totpay float,
+    Loan_paid float,
+    Loan_balance float,
+    Loan_InsD int(3),
+    Loan_InsEx int(3),
+    Loan_defaults int(3),
+    Loan_status varchar(20),
+    PRIMARY KEY (Loan_Acc_No)
+);

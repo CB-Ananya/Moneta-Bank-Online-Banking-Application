@@ -1,0 +1,8 @@
+Tenure (months)                     Rate of Interest(Compounded Quarterly)
+001-006 months                      2.5%
+007-012 months                      4.0%
+013-024 months                      5.0%
+025-036 months                      5.2%
+037-060 months                      5.5%
+061-084 months                      5.8%
+085-120 months                      6.2%
