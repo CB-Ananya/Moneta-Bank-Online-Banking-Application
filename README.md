@@ -39,13 +39,18 @@ give your hostname, username, password and database name as values for the param
 # For records to be maintained consistent (interest calculation purposes):
    run:
 	-> fd-daily-run.py
+ 
 	-> sb-daily-run.py
+ 
 	-> studloan-daily-run.py 
+ 
    files once every day 
 
    and
 	-> fd-quarterly-run.py
+ 
  	-> sb-quarterly run.py 
+  
    files every 3 months from the first day of running the main program.
 
 
